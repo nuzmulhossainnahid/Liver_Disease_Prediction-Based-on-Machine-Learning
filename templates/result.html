@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>eDoctor - Heart Attack Prediction Result</title>
+    <title>eDoctor - Liver Deases Prediction Based on Machine Learning</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -77,21 +77,21 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="http://127.0.0.1:8000/" class="nav-item nav-link ">Home</a>
-                        <a href="" class="nav-item nav-link active">Liver</a>
-                        <a href="http://127.0.0.1:8000/contactView" class="nav-item nav-link">About</a>
-                        <a href="http://127.0.0.1:8000/doctor_list_home" class="nav-item nav-link">Doctor</a>
+                        <a href="http://edoctordiu.xyz/" class="nav-item nav-link">Home</a>
+                        <a href="https://liverdiu.herokuapp.com/" class="nav-item nav-link active">Liver</a>
+                        <a href="http://edoctordiu.xyz/contactView" class="nav-item nav-link">About</a>
+                        <a href="http://edoctordiu.xyz/doctor_list_home" class="nav-item nav-link">Doctor</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Predicate</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="" class="dropdown-item">Kidney</a>
-                                <a href="" class="dropdown-item">Heart</a>
-                                <a href="" class="dropdown-item">Diabetes</a>
-                                <a href="" class="dropdown-item">Skin</a>
-                                <a href="" class="dropdown-item">Liver</a>
+                                <a href="http://192.168.0.100:5000/" class="dropdown-item">Kidney</a>
+                                <a href="https://heart-predictdiu.herokuapp.com/" class="dropdown-item">Heart</a>
+                                <a href="https://diabetes-predictionsdiu.herokuapp.com/" class="dropdown-item">Diabetes</a>
+                                <a href="https://skin-cancer-detector.herokuapp.com/" class="dropdown-item">Skin</a>
+                                <a href="https://liverdiu.herokuapp.com/" class="dropdown-item">Liver</a>
                             </div>
                         </div>
-                        <a href="" class="nav-item nav-link">Contact</a>
+                        <a href="http://edoctordiu.xyz/contactView" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -101,14 +101,14 @@
 
     <!-- main -->
 
-   {% if prediction==2 %}
-				<h1 style="color: rgb(189, 16, 16);text-align:center;"><span class='danger'>Oops! 🙁<br><br>You have LIVER DISEASE <br><br>Please Consult a Doctor.</span></h1>
-			{% elif prediction==1 %}
-				<h1 style="color: rgb(25, 197, 25);text-align:center;"><span class='safe'>🤩 Congratulation! 🤩<br><br>You DON'T have LIVER DISEASE.</span></h1>
-			{% endif %}
+    {% if prediction==2 %}
+    <h1 style="color: rgb(189, 16, 16);text-align:center;"><span class='danger'>Oops! 🙁<br><br>You have LIVER DISEASE <br><br>Please Consult a Doctor.</span></h1>
+    {% elif prediction==1 %}
+    <h1 style="color: rgb(25, 197, 25);text-align:center;"><span class='safe'>🤩 Congratulation! 🤩<br><br>You DON'T have LIVER DISEASE.</span></h1>
+    {% endif %}
 
     <div class="container-fluid" style="margin-top: 30px;">
-        <a href="http://127.0.0.1:8000/diabets_doctor">
+        <a href="http://edoctordiu.xyz/diabets_doctor">
             <button class="btn btn-lg btn-secondary btn-block">Our Doctor List</button>
         </a>
 
@@ -167,11 +167,10 @@
             <div class="col-lg-3 col-md-6 mb-5 ">
                 <h4 class="text-white mb-4 ">Quick Links</h4>
                 <div class="d-flex flex-column justify-content-start ">
-                    <a class="text-white mb-2 " href="# "><i class="fa fa-angle-right mr-2 "></i>Home</a>
-                    <a class="text-white mb-2 " href="# "><i class="fa fa-angle-right mr-2 "></i>About Us</a>
-                    <a class="text-white mb-2 " href="# "><i class="fa fa-angle-right mr-2 "></i>Doctor</a>
-                    <a class="text-white mb-2 " href="# "><i class="fa fa-angle-right mr-2 "></i>Predicate</a>
-                    <a class="text-white " href="# "><i class="fa fa-angle-right mr-2 "></i>Contact Us</a>
+                    <a class="text-white mb-2 " href="http://edoctordiu.xyz/"><i class="fa fa-angle-right mr-2 "></i>Home</a>
+                    <a class="text-white mb-2 " href="http://edoctordiu.xyz/contactView"><i class="fa fa-angle-right mr-2 "></i>About Us</a>
+                    <a class="text-white mb-2 " href="http://edoctordiu.xyz/doctor_list_home"><i class="fa fa-angle-right mr-2 "></i>Doctor</a>
+                    <a class="text-white " href="http://edoctordiu.xyz/contactView"><i class="fa fa-angle-right mr-2 "></i>Contact Us</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5 ">
@@ -206,6 +205,23 @@
 
     <!-- Back to Top -->
     <a href="# " class="btn btn-lg btn-primary back-to-top "><i class="fa fa-angle-double-up "></i></a>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/631848db54f06e12d8933ab3/1gcbdp8lr';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
 
 
     <!-- JavaScript Libraries -->
